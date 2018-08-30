@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>TheNextWe im App Store und bei Google Play</title>
+  <meta property="og:title" content="TheNextWe im App Store und bei Google Play" />
+  <meta property="og:image" content="https://www.thenextwe.com/assets/img/tnw_cover_17.jpg" />
+  <meta property="og:description" content="TheNextWe ist digitales Business Coaching in Deiner Hosentasche. Mit einem professionellen Coach und der TheNextWe®-App arbeitest Du 12 Wochen auf die Erreichung eines persönlichen Weiterentwicklungsziels hin." />
+  <meta property="og:url" content="https://app.thenextwe.com" />
+  <meta property="og:locale" content="de_DE" />
+</head>
+
+<body>
+  <script>
+    var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    var android = /(android)/i.test(navigator.userAgent);
+    var lang = navigator.language || navigator.userLanguage;
+    if (ios) 
+      window.location = 'https://itunes.apple.com/us/app/thenextwe/id1429949584?mt=8';
+    else if (android)
+      window.location = 'https://play.google.com/store/apps/details?id=com.thenextwe.android';
+    else if (lang.indexOf('de') == 0)
+      window.location = 'https://www.thenextwe.com/de/app/';
+    else
+      window.location = 'https://www.thenextwe.com/en/app/';
+  </script>
+</body>
+
+</html>
